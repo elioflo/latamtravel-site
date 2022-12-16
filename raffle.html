@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LatamTravel</title>
+
+    <link rel="stylesheet" href="./assets/styles/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="./index.html" class="nav__link">Our services</a>
+            <a href="./about.html" class="nav__link">About us</a>
+            <a href="./contact.html" class="nav__link">Contact us</a>
+            <a href="./service.html" class="nav__link">Services</a>
+            <a href="./special.html" class="nav__link">Specials</a>
+            <a href="#" class="nav__link">Raffle</a>
+        </nav>
+        <img src="./assets/images/logo.png" alt="" class="header__logo">
+    </header>
+    <main class="main">
+        <h1 class="main__title">LatamTravel</h1>
+        <h2 class="main__subtitle">Raffle</h2>
+        <div class="raffle__images">
+            <img class="raffle__img" src="./assets/images/argentina.jpg" alt="">
+            <img class="raffle__img" src="./assets/images/remera.png" alt="">
+        </div>
+        <div class="raffle__content">
+            <p class="raffle__text">
+                Get the chance to win a football shirt filling this form!
+            </p>
+            <form action="./show_data.html" class="raffle__form">
+                <label class="raffle__item" for="first-name">First Name: <input id="first-name" name="first-name" type="text"></label>
+                <label class="raffle__item" for="last-name">Last Name: <input type="text" name="last-name" id="last-name"></label>
+                <label class="raffle__item" for="address">Address: <input type="text" name="address" id="address"></label>
+                <label class="raffle__item" for="zip-code">Zip Code: <input type="number" name="zip-code" id="zip-code"></label>
+                <label class="raffle__item" for="age">Age: <input type="number" name="age" id="age"></label>
+                <label class="raffle__item" for="email">E-mail: <input type="email" name="email" id="email"></label>
+                <label class="raffle__item" for="phone">Phone: <input type="number" name="phone" id="phone"></label>
+                <fieldset class="raffle__item">
+                    <label for="phone-type"><input type="radio" name="contact-type" id="phone-type" value="phone"> Phone</label>
+                    <label for="mobile-type"><input type="radio" name="contact-type" id="mobile-type" value="mobile"> Mobile</label>
+                </fieldset>
+                <fieldset class="raffle__item raffle__gender">
+                    <p>Gender:</p>
+                    <label for="female"><input type="radio" name="gender" id="female" value="female"> Female</label>
+                    <label for="male"><input type="radio" name="gender" id="male" value="male"> Male</label>
+                </fieldset>
+                <div class="raffle__item">
+                    <label for="continent">Continent:</label>
+                    <select name="continent" id="continent">
+                        <option value="North America">North America</option>
+                        <option value="South America">South America</option>
+                        <option value="Europe">Europe</option>
+                        <option value="Asia">Asia</option>
+                        <option value="Oceania">Oceania</option>
+                        <option value="Antarctica">Antarctica</option>
+                    </select>
+                </div>
+                <label class="raffle__item" for="country">Country:<input type="text" name="country" id="country"></label>
+                <fieldset class="raffle__item raffle__payment">
+                    <legend>
+                        Payment options:
+                    </legend>
+                    <label for="cash"><input type="radio" name="payment" id="cash" value="cash"> Cash</label>
+                    <label for="credit"><input type="radio" name="payment" id="credit" value="credit card"> Credit cards</label>
+                    <label for="debit"><input type="radio" name="payment" id="debit" value="debit card"> Debit cards</label>
+                </fieldset>
+                <div class="raffle__item">
+                    <label for="textarea">Services</label>
+                    <textarea name="services" id="textarea" cols="30" rows="10"></textarea>
+                </div>
+                <label class="raffle__terms" for="terms"><input type="checkbox" name="terms" id="terms"> I accept terms and conditions...</label>
+                <input class="raffle__submit" type="submit" value="Send">
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.440439604526!2d-58.816164!3d-27.4866747!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456b777360a965%3A0x1b570dbe8071963b!2sAvenida%20Juan%20Ramon%20Vidal%2C%20Corrientes!5e0!3m2!1ses!2sar!4v1671130623591!5m2!1ses!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="footer__links">
+            <a href="mailto:LatamTravel@gmail.com" class="contact__email">LatamTravel@gmail.com</a>
+            <a href="tel:035767231320" class="contact__phone">telefono:0357-67231320</a>
+        </div>
+        <div class="footer__author">
+            <a href="https://twitter.com/7532elioflo" target="_blank" class="footer__link footer__link--twitter"><img src="./assets/images/twitter.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/elio-flores-b32371226/" target="_blank" class="footer__link footer__link--linkedin"><img src="./assets/images/linkedin.svg" alt=""></a>
+            <a href="https://github.com/elioflo" target="_blank" class="footer__link footer__link--github"><img src="./assets/images/github.svg" alt=""></a>
+            <a href="https://gitlab.com/elioflo" target="_blank" class="footer__link footer__link--gitlab"><img src="./assets/images/gitlab.svg" alt=""></a>
+            <p>Coded by <strong><a href="#" class="footer__name">Elio Flores</a></strong></p>
+        </div>
+    </footer>
+</body>
+
+</html>
