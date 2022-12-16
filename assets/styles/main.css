@@ -114,12 +114,12 @@ body {
 
 .raffle__item {
   font-weight: bold;
-  width: 100%;
-  max-width: 250px;
+  width: 90%;
   margin: 1rem auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  
 }
 
 .raffle__item > input[type='text'],
@@ -164,6 +164,12 @@ body {
   border-radius: 5px;
   border: none;
   letter-spacing: 0.3rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.raffle__device {
+  align-items: end;
 }
 
 fieldset.raffle__item {
@@ -384,15 +390,11 @@ table tr td:first-child {
 
   .raffle__item {
     margin: 1rem 0;
+    max-width: 250px;
   }
 
   .raffle__gender {
     max-width: none;
-  }
-
-  .raffle__submit {
-    margin-left: auto;
-    margin-right: auto;
   }
 
   /*=====================MAIN==============*/
